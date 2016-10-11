@@ -1,0 +1,41 @@
+{
+  "name": "angular2-test",
+  "version": "1.0.0",
+  "description": "Test av Angular 2 och TypeScript",
+  "main": "public/app.js",
+  "scripts": {
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monarthur/angular2-test.git"
+  },
+  "keywords": [
+    "angular 2",
+    "2"
+  ],
+  "author": "Filip Sjögren",
+  "license": "ISC",
+  "homepage": "https://github.com/monarthur/angular2-test#readme",
+  "dependencies": {
+    "@angular/common": "~2.0.2",
+    "@angular/compiler": "~2.0.2",
+    "@angular/core": "~2.0.2",
+    "@angular/forms": "~2.0.2",
+    "@angular/http": "~2.0.2",
+    "@angular/platform-browser": "~2.0.2",
+    "@angular/platform-browser-dynamic": "~2.0.2",
+    "@angular/router": "~3.0.2",
+    "@angular/upgrade": "~2.0.2",
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "^0.6.25"
+  },
+  "devDependencies": {
+    "angular2-template-loader": "^0.4.0",
+    "ts-loader": "^0.9.0",
+    "typescript": "^2.0.3",
+    "webpack": "1.13.1",
+    "typings":"^1.4.0"
+  }
+}
