@@ -12,16 +12,33 @@ module.exports = {
     },
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
-        include: /\.min\.js$/,
-        minimize: true
+            include: /\.min\.js$/,
+            minimize: true,
+            compress: {
+                warnings: false
+            },
+            output: {
+                comments: false
+            }
         })
     ],
     resolve: {
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
     },
     module: {
+        //loaders: [
+        //    {test: /\.ts?$/, loader: 'ts-loader'}
+        //]
         loaders: [
-            {test: /\.ts?$/, loader: 'ts-loader'}
+            {
+                test: /\.ts$/,
+                loaders: ['awesome-typescript-loader', 'angular2-template-loader']
+            },
+            {
+                test: /\.html$/,
+                loader: 'html'
+            }
         ]
-    }
+    },
+    modulesDirectories: ['node_modules']
 }
